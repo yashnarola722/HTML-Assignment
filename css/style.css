@@ -1,0 +1,107 @@
+body{
+    background-color: #FAFAFA;
+    min-height: 100vh;
+    top: 0px;
+    left: 0px;
+    width: 1560px;
+    height: 720px;
+}
+
+#fullpage{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left{
+    margin: 72px 164px 72px 150px;
+}
+.left img{
+    border-radius: 50%;
+    width: 576px;
+    height: 576px;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
+}
+
+.right{
+    margin-top: 106px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+#logoimg{
+    top: 106px;
+    left: 906px;
+    width: 272px;
+    height: 58px;
+}
+
+
+.top1{
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+span{
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    }
+
+.login-text{
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+input{
+    padding-left: 1rem;
+    margin-bottom: 27px;
+    width: 429px;
+    height: 49px;   
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+.forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+}
+
+button{
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    border-color: #C8242F;
+    width: 138px;
+    height: 45px;
+    color: #FFFFFF;
+}
+
+.forgot p{
+    color: #ADADAD;
+
+}
+
+.bottom{
+    display: flex;
+}
+#regcol{
+    color:#C8242F;
+}
+.bottom>p{
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
