@@ -1,107 +1,167 @@
-body{
-    background-color: #FAFAFA;
-    min-height: 100vh;
-    top: 0px;
-    left: 0px;
-    width: 1560px;
-    height: 720px;
+body {
+  background-color: #fafafa;
+  /* min-height: 100vh; */
 }
 
-#fullpage{
-    display: flex;
-    justify-content: space-between;
-    
+#container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 90%; */
 }
 
-.left{
-    margin: 72px 164px 72px 150px;
-}
-.left img{
-    border-radius: 50%;
-    width: 576px;
-    height: 576px;
-    border: 20px solid #FFFFFF;
-    box-shadow: 0px 4px 31px #0000000A;
+.left {
+  margin: 5% 10% 0% 8%;
+  /* width: 40%; */
 }
 
-.right{
-    margin-top: 106px;
+.left img {
+  border-radius: 50%;
+  /* width: 110%; */
+  width: 576px;
+  border: 20px solid #ffffff;
+  box-shadow: 0px 4px 31px #0000000a;
 }
 
+.right {
+  margin-top: 106px;
+}
+/* 
 .top{
     display: flex;
     align-items: center;
 }
 
-#logoimg{
-    top: 106px;
-    left: 906px;
-    width: 272px;
-    height: 58px;
+.top h1{
+    font-size: 40px;
+} */
+
+div img {
+  width: 272px;
 }
 
-
-.top1{
-    text-align: left;
-    font: normal normal 300 40px/47px Roboto;
-    letter-spacing: 0px;
-    color: #3E3E3E;
+.top1 {
+  text-align: left;
+  font: normal normal 300 40px/47px Roboto;
+  color: #3e3e3e;
 }
 
-span{
-    text-align: left;
-    font: normal normal 900 40px/53px Roboto;
-    letter-spacing: 0px;
-    color: #C8242F;
-    }
-
-.login-text{
-    text-align: left;
-    font: normal normal normal 25px/33px Roboto;
-    letter-spacing: 0px;
-    color: #3E3E3E;
+span {
+  text-align: left;
+  font: normal normal 900 40px/53px Roboto;
+  color: #c8242f;
 }
 
-input{
-    padding-left: 1rem;
-    margin-bottom: 27px;
-    width: 429px;
-    height: 49px;   
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
+.login-text {
+  text-align: left;
+  font: normal normal normal 25px/33px Roboto;
+  color: #3e3e3e;
 }
 
-.forgot{
-    display: flex;
-    align-items: center;
+input {
+  padding-left: 1rem;
+  margin-bottom: 27px;
+  width: 75%;
+  height: 49px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+
+.forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 77%;
+}
+
+button {
+  background: #c8242f 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 23px;
+  width: 30%;
+  height: 45px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.forgot p {
+  /* text-align: left; */
+  font: normal normal normal 15px/20px Roboto;
+  color: #adadad;
+}
+
+.bottom {
+  display: flex;
+}
+
+.member {
+  /* text-align: left; */
+  font: normal normal normal 15px/20px Roboto;
+  color: #adadad;
+}
+
+.register {
+  /* text-align: left; */
+  font: normal normal normal 15px/20px Roboto;
+  color: #c8242f;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 801px) {
+  #container {
     justify-content: space-between;
-    width: 77%;
+  }
+  .left {
+    width: 125%;
+    margin: auto;
+  }
+  .left img {
+    width: 80%;
+    /* margin: auto; */
+  }
+  .right {
+    margin: auto;
+  }
 }
 
-button{
-    background: #C8242F 0% 0% no-repeat padding-box;
-    border-radius: 23px;
-    border-color: #C8242F;
-    width: 138px;
-    height: 45px;
-    color: #FFFFFF;
-}
-
-.forgot p{
-    color: #ADADAD;
-
-}
-
-.bottom{
+@media screen and (max-width: 800px) {
+  #container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .left img {
+    width: 90%;
+  }
+  .right {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  .top img {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+  .top1 {
+    width: 100%;
+    text-align: center;
+  }
+  .login-text {
+    text-align: center;
+  }
+  input {
+    width: 90%;
     display: flex;
-}
-#regcol{
-    color:#C8242F;
-}
-.bottom>p{
-    text-align: left;
-    font: normal normal normal 15px/20px Roboto;
-    letter-spacing: 0px;
-    color: #ADADAD;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    margin-left: 10%;
+  }
+  .forgot {
+    width: 85%;
+  }
+  .bottom {
+    justify-content: center;
+  }
 }
