@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innerpage</title>
+    <link rel="stylesheet" href="css\innerpage.css" />
+    <script>
+      function dis() {
+        if (document.getElementById("check").checked == false) {
+          document.getElementById("aside").style.display = "none";
+        } else {
+          document.getElementById("aside").style.display = "flex";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="head1">
+        <input type="checkbox" id="check" hidden />
+        <label for="check">
+          <a onclick="dis()"
+            ><img src="images\menu-bar.svg" alt="" id="menu"
+          /></a>
+        </label>
+        <img src="images\header-logo.svg" alt="logo" id="logo" />
+        <img src="images\search-icon.svg" alt="search-icon" id="search-icon" />
+        <input type="search" placeholder="Search" id="search" />
+      </div>
+      <div id="head2">
+        <a href="http://">
+          <img
+            src="images\notification-icon.svg"
+            alt="notification-icon"
+            id="notification-icon"
+        /></a>
+        <a href="http://"
+          ><img src="images\profile.png" alt="profile" id="profile"
+        /></a>
+        <p>John Doe</p>
+        <img src="images\downward-arrow.svg" alt="dropdown" id="dropdown" />
+      </div>
+    </header>
+    <div id="container">
+      <aside id="aside">
+        <div>
+          <img
+            src="images\dashboard-default.svg"
+            alt="Dashboard"
+            class="icon"
+          />
+          <p>Dashboard</p>
+        </div>
+        <div id="highlight">
+          <img src="images\graph-active.svg" alt="Analysis" class="icon" />
+          <p>Analysis</p>
+        </div>
+        <div>
+          <img src="images\inbox-default.svg" alt="Inbox" class="icon" />
+          <p>Inbox</p>
+        </div>
+        <div>
+          <img src="images\clock-default.svg" alt="History" class="icon" />
+          <p>History</p>
+        </div>
+        <div>
+          <img src="images\user-default.svg" alt="Users" class="icon" />
+          <p>Users</p>
+        </div>
+        <div>
+          <img
+            src="images\maintenance-default.svg"
+            alt="Maintenance"
+            class="icon"
+          />
+          <p>Maintenance</p>
+        </div>
+        <div>
+          <img src="images\setting-default.svg" alt="Setting" class="icon" />
+          <p>Setting</p>
+        </div>
+      </aside>
+      <main>
+        <div><h2 id="analysis">Analysis</h2></div>
+        <form method="post">
+          <p class="p">One Column</p>
+          <input type="text" placeholder="Name" style="display: block" />
+          <select name="" id="drp1" placeholder="Dropdown">
+            <option value="">Dropdown</option>
+          </select>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Multiple line"
+          ></textarea>
+          <p class="p">Two Column</p>
+          <div class="col2">
+            <input type="text" placeholder="Name" class="inp1 margin1" />
+            <fieldset>
+              <legend>Username</legend>
+              <input type="text" placeholder="Name" />
+            </fieldset>
+          </div>
+          <div class="col2">
+            <input type="password" class="inp1" placeholder="Password" />
+            <select name="" class="drp2">
+              <option value="">Dropdown</option>
+            </select>
+          </div>
+          <p class="p">Three Column</p>
+          <div class="col3">
+            <fieldset class="active">
+              <legend>Focus</legend>
+              <input type="text" placeholder="|" />
+            </fieldset>
+            <fieldset>
+              <legend>Password</legend>
+              <input type="text" placeholder="" />
+            </fieldset>
+            <fieldset id="disable">
+              <legend>Disabled</legend>
+              <input type="text" placeholder="johndoe" disabled />
+            </fieldset>
+          </div>
+          <p class="p">Four Column</p>
+          <div class="col3">
+            <fieldset class="subcol active">
+              <legend>Designation</legend>
+              <input type="text" placeholder="UI Designer" />
+            </fieldset>
+            <input
+              type="text"
+              placeholder="Name"
+              class="subcol margin1"
+              id="inpName"
+            />
+            <fieldset class="subcol">
+              <legend>Username</legend>
+              <input type="text" placeholder="johndoe" />
+            </fieldset>
+            <select name="" class="subcol drp2 margin1">
+              <option value="">Select</option>
+            </select>
+          </div>
+          <p class="p">Other Design Elements</p>
+          <p class="p">File Upload</p>
+          <input type="file" hidden id="uploadimg" />
+          <label for="f">
+            <div id="">
+              <img src="images\cloud-upload-icon.svg" alt="" />
+              <p>Upload</p>
+            </div>
+          </label>
+
+          <p class="p">Radio Button</p>
+          <div class="radio">
+            <div class="rad">
+              <input
+                type="radio"
+                name="option"
+                value="Option 1"
+                class="op1"
+              /><label for="op1">Option 1</label>
+            </div>
+            <div class="rad">
+              <input
+                type="radio"
+                name="option"
+                value="Option 2"
+                class="op2"
+              /><label for="op2">Option 2</label>
+            </div>
+          </div>
+          <p class="p fs">Checkbox</p>
+          <div class="radio">
+            <div class="rad">
+              <input
+                type="checkbox"
+                name="option"
+                value="Option 1"
+                class="op1"
+              /><label for="op1 ">Option 1</label>
+            </div>
+            <div class="rad">
+              <input
+                type="checkbox"
+                name="option"
+                value="Option 2"
+                class="op2"
+              /><label for="op2">Option 2</label>
+            </div>
+          </div>
+          <p class="p fs">Snackbar</p>
+          <div class="msg">
+            <div id="err">
+              <img
+                src="images\error-icon.svg"
+                alt="error"
+                class="snck-icon"
+              />This is an error message!
+            </div>
+            <div id="info">
+              <img
+                src="images\info-icon.svg"
+                alt="info"
+                class="snck-icon"
+              />This is an information message!
+            </div>
+          </div>
+          <div class="msg">
+            <div id="warn">
+              <img
+                src="images\warning-icon.svg"
+                alt="error"
+                class="snck-icon"
+              />This is a warning message!
+            </div>
+            <div id="success">
+              <img
+                src="images\success-icon.svg"
+                alt="info"
+                class="snck-icon"
+              />This is a success message!
+            </div>
+          </div>
+          <p class="p fs">Call to action</p>
+          <div class="radio">
+            <button id="prm">Primary</button>
+            <button id="sec">Secondary</button>
+          </div>
+          <p class="p fs">Tabs</p>
+          <div id="tab">
+            <a href="#text" id="t1">Tab 1</a>
+            <a href="#text" id="t2">Tab 2</a>
+            <a href="#text" id="t3">Tab 3</a>
+          </div>
+          <div id="text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

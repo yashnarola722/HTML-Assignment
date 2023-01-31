@@ -1,225 +1,384 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-.nav{
-    height: 80px;
+body {
+  background: #fafafa;
 }
-#menu-bar{
-    
-    top: 34px;
-    left: 29px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
 }
-#header-logo{
+
+#head1,
+#head2 {
+  justify-content: space-around;
+}
+
+#menu {
+  border: none;
+  width: 25px;
+  height: 18px;
+  margin-top: 34px;
+  margin-left: 5px;
+  background-color: white;
+}
+
+#logo {
+  margin: 25px 5px;
+  width: 142px;
+  height: 30px;
+}
+
+#search-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 33px;
+  margin-left: 8px;
+}
+
+#search {
+  border: none;
+  margin-left: 8px;
+  height: 21px;
+  padding: 2px;
+  margin-top: 32px;
+}
+
+#notification-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 28px;
+}
+
+#profile {
+  width: 44px;
+  height: 44px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+header div {
+  display: flex;
+}
+
+header div p {
+  margin-top: 27px;
+  font: 16px/21px Roboto;
+  margin-left: 10px;
+}
+
+#dropdown {
+  height: 25px;
+  width: 35px;
+  margin-top: 25px;
+}
+
+body div {
+  display: flex;
+}
+
+aside {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+aside div {
+  display: flex;
+  font: 16px/21px Roboto;
+  justify-content: flex-start;
+  width: 183px;
+  height: 43px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+aside div p {
+  margin-top: 8px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-left: 16px;
+}
+
+#highlight {
+  background: #fff3f4;
+  color: #c8242f;
+}
+
+#label {
+  font: 30px/39px Roboto;
+  margin-top: 14px;
+  margin-left: 25px;
+}
+
+main {
+  background: #fafafa;
+  margin: 20px;
+}
+
+#items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  margin-top: 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 195px;
+  height: 116px;
+  background-color: white;
+  justify-content: center;
+}
+
+.allicon {
+  width: 34px;
+  height: 34px;
+  margin-top: 31px;
+  margin-right: 12px;
+}
+
+.num {
+  font: 25px/33px Roboto;
+  color: #3e3e3e;
+}
+
+.subitem {
+  margin-top: 31px;
+  display: block;
+}
+
+.title {
+  font: 15px/20px Roboto;
+  color: #3e3e3e;
+}
+
+#graph {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#graph div {
+  background-color: white;
+}
+
+#dgraph {
+  /* height: 400px; */
+  width: 100%;
+  display: block;
+}
+
+#pichart {
+  width: 100%;
+  height: 330px;
+  display: block;
+}
+
+.sale {
+  font: 22px/29px Roboto;
+  margin-bottom: 20px;
+}
+
+#yearly {
+  color: #c8242f;
+  text-decoration-line: underline;
+  text-decoration-color: #c8242f;
+}
+
+nav a {
+  font: 12px/16px Roboto;
+  color: #adadad;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#dgraphdiv {
+  width: 60%;
+  padding: 2%;
+  flex-direction: column;
+}
+
+#pchartdiv {
+  width: 30%;
+  padding: 2%;
+  flex-direction: column;
+}
+
+#info {
+  display: flex;
+  font: 15px/20px Roboto;
+  color: #3e3e3e;
+  padding: 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#info img {
+  width: 18px;
+  height: 18px;
+}
+
+.country div {
+  width: 120px;
+}
+
+#table-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  background-color: white;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+th {
+  text-align: left;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 1.5px;
+  color: #adadad;
+}
+
+table {
+  background-color: white;
+  width: 100%;
+  border-spacing: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+tbody {
+  text-align: left;
+  font: 15px/20px Roboto;
+  color: #3e3e3e;
+}
+
+td {
+  border-bottom: 1px solid whitesmoke;
+}
+
+#invoice {
+  font: 22px/29px Roboto;
+  color: #3e3e3e;
+}
+
+#viewall {
+  font: normal normal normal 12px/16px Roboto;
+  color: #c8242f;
+}
+
+td div {
+  width: fit-content;
+  padding: 2px 12px;
+  border-radius: 5px;
+  font: 15px/20px Roboto;
+}
+
+#paid {
+  background: #ebffef;
+  color: #3cdd5f;
+}
+
+#fail {
+  background: #fff5f5;
+  color: #ff4545;
+}
+
+#pending {
+  background: #f8f8f8;
+  color: #bababa;
+}
+
+@media screen and (max-width: 1120px) {
+  #graph {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #dgraphdiv {
+    width: unset;
+  }
+  #pchartdiv {
+    width: unset;
+  }
+  .main {
+    width: 82%;
+  }
+  #items {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  table {
+    margin: 0px;
+  }
+  #tab-head {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+    width: unset;
+    flex-wrap: wrap;
+  }
+  main {
+    width: unset;
+  }
+
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+  #logo {
+    width: 105px;
+  }
+  #search {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #menu {
+    width: 20px;
+  }
+
+  #logo {
+    width: 90px;
+  }
+  #notification-icon {
+    width: 16px;
+  }
+  #profile {
+    width: 32px;
+    height: 32px;
     margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    width: 142px;
-    height: 30px;
-}
-#search-icon{
-    margin-top: 32px;
-    margin-left: 77px;
-    width: 16px;
-    height: 16px;
-}
-
-#search{
-    width: 49px;
-    height: 21px;
-    margin-left: 15px;
-    margin-top: 28px;
-}
-#notification-icon{
-    width: 22px;
-    height: 21px;
-    margin-left: 925px;
-    margin-top: 28px;
-}
-#profile{
-    width: 44px;
-    height: 44px;   
-    margin-left: 52px;
-    margin-top: 18px;
-}
-
-#john{
-    margin-left: 12px;
-    margin-top: 28px;
-
-}
-#downward-arrow{
-    margin-left: 15px;
-}
-
-.lower{
-    display: flex;
-}
-
-.sidebar{
-    width: 242px;
-    height: 1279px;
-}
-.dashboard{
-    display: flex;
-    width: 183px;
-    height: 43px;
-    margin-left: 30px;
-    background-color: #FFF3F4;
-    border-radius: 5px 5px 5px 5px;
-}
-.dashboard img{
-    width: 15px;
-    height: 15px;
-    margin-left: 17px;
-    margin-top: 14px;
-}
-
-.dashboard p{
-    color: #C8242F;
-    text-align: left;
-    margin-left: 13px;
-    margin-top: 10px;
-}
-
-.analysis{
-    display: flex;
-}
-.analysis img{
-    width: 19px;
-    height: 18px;
-    margin-left: 46px;
-    margin-top: 23px;
-
-}
-.analysis p{
-    margin-left: 10px;
-    margin-top: 20px;
-
-}
-
-.inbox{
-    display: flex;
-}
-.inbox img{
-    width: 15px;
-    height: 15px;
-    margin-left: 48px;
-    margin-top: 23px;
-}
-.inbox p{
-    width: 39px;
-    height: 21px;
-    margin-left: 13px;
-    margin-top: 20px;
-}
-
-.history{
-    display: flex;
-}
-.history img{
-    width: 16px;
-    height: 16px;
-    margin-left: 47px;
-    margin-top: 23px;
-}
-.history p{
-    margin-left: 12px;
-    margin-top: 20px;
-}
-
-.users{
-    display: flex;
-}
-.users img{
-    width: 16px;
-    height: 16px;
-    margin-left: 47px;
-    margin-top: 23px;
-}
-.users p{
-    margin-left: 12px;
-    margin-top: 20px;
-}
-
-.maintenance{
-    display: flex;
-}
-.maintenance img{
-    width: 16px;
-    height: 16px;
-    margin-left: 47px;
-    margin-top: 23px;
-}
-.maintenance p{
-    margin-left: 12px;
-    margin-top: 20px;
-}
-
-.setting{
-    display: flex;
-}
-.setting img{
-    width: 16px;
-    height: 16px;
-    margin-left: 47px;
-    margin-top: 23px;
-}
-.setting p{
-    margin-left: 12px;
-    margin-top: 20px;
-}
-
-.dasboard{
-    background-color: #fafafa;
-}
-
-.dasboard #dash{
-    margin-top: 41px;
-    margin-left: 48px;
-    text-align: left;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0px;
-    color: #000000;
-    width: 146px;
-    height: 39px;
-    margin-bottom: 0%;
-}
-
-.line{
-    display: flex;
-}
-.rate{
-    display: flex;
-}
-.star{
-    background-color: #ffffff;
-    display: flex;
-    width: 219px;
-    height: 116px;
-    margin-left: 50px;
-    margin-top: 23px;
-}
-
-.star img{
-    height: 33px;
-    width: 33px;
-    margin-top: 41px;
-    margin-left: 38px;
-}
-
-.new #num{
-    width: 77px;
-    height: 33px;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 31px;
-    margin-left: 19px;
-    margin-bottom: 0px;
-}
-.new #name{
-    width: 94px;
-    height: 20px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 19px;
-    margin-top: 0px;
+  }
+  #dropdown {
+    width: 25px;
+  }
 }

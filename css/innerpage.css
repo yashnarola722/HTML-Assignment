@@ -1,0 +1,431 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#head1,
+#head2 {
+  justify-content: space-around;
+}
+
+#menu {
+  border: none;
+  width: 25px;
+  height: 18px;
+  margin-top: 34px;
+  margin-left: 5px;
+  background-color: white;
+}
+
+#logo {
+  margin: 25px 5px;
+  width: 142px;
+  height: 30px;
+}
+
+#search-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 33px;
+  margin-left: 8px;
+}
+
+#search {
+  border: none;
+  margin-left: 8px;
+  height: 21px;
+  padding: 2px;
+  margin-top: 32px;
+}
+
+#notification-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 28px;
+}
+
+#profile {
+  width: 44px;
+  height: 44px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+header div {
+  display: flex;
+}
+
+header div p {
+  margin-top: 27px;
+  font: 16px/21px Roboto;
+  margin-left: 10px;
+}
+
+#dropdown {
+  height: 25px;
+  width: 35px;
+  margin-top: 25px;
+}
+
+body div {
+  display: flex;
+}
+
+aside {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+aside div {
+  display: flex;
+  font: 16px/21px Roboto;
+  justify-content: flex-start;
+  width: 183px;
+  height: 43px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+aside div p {
+  margin-top: 8px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 8px;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+#highlight {
+  background: #fff3f4;
+  color: #c8242f;
+}
+
+#label {
+  font: 30px/39px Roboto;
+  margin-top: 14px;
+  margin-left: 25px;
+}
+
+#analysis {
+  margin-left: 25px;
+  font: 30px/39px Roboto;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+main {
+  background: #fafafa;
+  margin: 10px;
+}
+
+form {
+  background-color: white;
+  margin: 18px 25px;
+}
+
+.p {
+  padding-left: 30px;
+  padding-top: 20px;
+  font: 22px/29px Roboto;
+  color: #3e3e3e;
+  font-weight: 600;
+}
+/* .ipborder {
+  width: 1157px;
+  height: 49px;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  margin-bottom: 21px;
+  margin-left: 30px;
+  margin-right: 30px;
+} */
+form input {
+  height: 23px;
+  width: 92%;
+  margin: 10px auto;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#drp1 {
+  display: block;
+  width: 94%;
+  margin: 30px auto;
+  height: 34px;
+  padding: 4px;
+  color: #3e3e3e;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 92.5%;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+}
+
+fieldset {
+  width: 92%;
+  margin: 0px auto;
+  /* height: 48px; */
+}
+
+fieldset input {
+  border: none;
+  padding: 0px 5px;
+  margin: 0px;
+}
+
+.inp1,
+fieldset,
+.drp2 {
+  width: 42%;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.col2 {
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-around;
+}
+
+.col3 {
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-around;
+}
+
+.active {
+  border: 1px solid #c8242f;
+  color: #c8242f;
+}
+
+#disable {
+  border: 1px dashed gray;
+}
+
+.col3 fieldset {
+  width: 26%;
+}
+
+.subcol {
+  width: 17% !important;
+}
+
+.col3 input {
+  margin: 0px;
+}
+
+.margin1 {
+  margin-top: 6px !important;
+}
+
+label button {
+  border: 1px solid #c8242f;
+  border-radius: 18px;
+}
+
+label div {
+  border: 1px solid #c8242f;
+  border-radius: 18px;
+  width: 82px;
+  margin: 10px 30px;
+  padding: 5px 12px;
+  justify-content: space-around;
+  color: #c8242f;
+}
+#uploadimg {
+  margin-left: 30px;
+}
+.radio {
+  justify-content: flex-start;
+  margin: 10px 15px;
+}
+
+.rad {
+  width: 20%;
+}
+
+.op1,
+.op2 {
+  width: 18px;
+  height: 18px;
+  margin: 0px;
+  margin-right: 10px;
+  margin-left: 30px;
+  accent-color: #c8242f;
+}
+
+.snck-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.msg {
+  margin: 10px 30px;
+  justify-content: space-between;
+}
+
+.msg div {
+  border-radius: 5px;
+  width: 45%;
+  padding: 5px;
+}
+
+#err {
+  border: 1px solid #ff3535;
+  color: #ff3535;
+}
+
+#info {
+  border: 1px solid #00b9e1;
+  color: #00b9e1;
+}
+
+#warn {
+  border: 1px solid #ffa800;
+  color: #ffa800;
+}
+
+#success {
+  border: 1px solid #00af27;
+  color: #00af27;
+}
+
+#prm {
+  background: #c8242f;
+  border-radius: 23px;
+  font: 18px/24px Roboto;
+  color: white;
+  padding: 8px 18px;
+  margin-right: 25px;
+  margin-left: 20px;
+  border: none;
+}
+
+#sec {
+  border: 1px solid #c8242f;
+  border-radius: 22px;
+  padding: 8px 18px;
+  font: 18px/24px Roboto;
+  background-color: white;
+  color: #c8242f;
+}
+
+#tab {
+  border-bottom: 1px solid gray;
+  margin: 10px 15px;
+}
+
+#t2:active {
+  color: #c8242f;
+  border-bottom: 2px solid #c8242f;
+}
+
+#t1,
+#t2,
+#t3 {
+  font: 15px/20px Roboto;
+  text-decoration: none;
+  margin: 0px 8px;
+  padding: 0px 5px;
+}
+
+#t1 {
+  color: #c8242f;
+  border-bottom: 2px solid #c8242f;
+}
+
+#t2,
+#t3 {
+  color: #adadad;
+}
+
+#text {
+  font: 15px/24px Roboto;
+  color: #3e3e3e;
+  margin: 10px 30px;
+  padding: 10px 2px;
+}
+
+@media screen and (max-width: 918px) {
+  .col3 {
+    flex-direction: column;
+  }
+  .subcol,
+  .col3 fieldset,
+  .col3 select {
+    margin: 10px 20px !important;
+    width: 80% !important;
+  }
+  .col3 select {
+    height: 28px;
+  }
+  #inpName {
+    width: 78% !important;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  #container {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: unset;
+  }
+  .msg {
+    flex-direction: column;
+    margin: 0px 15px;
+  }
+  #err,
+  #info,
+  #warn,
+  #success {
+    margin: 10px 0px;
+    width: 80%;
+  }
+  main {
+    width: unset;
+  }
+  #logo {
+    width: 105px;
+  }
+  #search {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #menu {
+    width: 20px;
+  }
+  #logo {
+    width: 90px;
+  }
+  #notification-icon {
+    width: 16px;
+  }
+  #profile {
+    width: 32px;
+    height: 32px;
+    margin-top: 25px;
+  }
+  #dropdown {
+    width: 25px;
+  }
+}
